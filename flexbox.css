@@ -1,0 +1,90 @@
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+    padding: 14px;
+}
+
+img {
+    width: 160%;
+    height: 130%;
+    box-shadow: 5px 5px 5px transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img:hover {
+
+    opacity: 1;
+    box-shadow: 0 8px 20px 0px;
+}
+
+@media screen and (min-width:600px) {
+    li {
+        width: 100%;
+        margin: 0 auto;
+        padding: 14px;
+    }
+
+}
+
+.flexcontainer {
+    display: flex;
+    background-color: blueviolet;
+    flex-direction: row;
+    width: 200%;
+    height: 20%;
+    animation-name: boxanimate;
+    animation-duration: 5s;
+    animation-direction: reverse;
+    position: relative;
+    animation-iteration-count: infinite;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-property: initial;
+    transition-duration: 15s;
+}
+
+@keyframes boxanimate {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    75% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    100% {
+        background-color: red;
+        top: 0px;
+        top: 0px;
+    }
+}
+
+body,
+html {
+    background-color: rgb(177, 209, 221);
+}
